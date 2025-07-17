@@ -416,34 +416,34 @@
 
    <!--For Resume Download -->
   <script>
-    function downloadResume() {
-      const spinner = document.getElementById('loadingSpinner');
-      spinner.style.display = 'block';
+   function downloadResume() {
+  const spinner = document.getElementById('loadingSpinner');
+  spinner.style.display = 'block';
 
-      fetch('/files/Resume.pdf')
-        .then(res => {
-          if (!res.ok) throw new Error("File not found");
-          return res.blob();
-        })
-        .then(blob => {
-          const url = URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = 'Darius_Cumpio_Resume.pdf';
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-          URL.revokeObjectURL(url);
-        })
-        .catch(() => {
-          window.open('/files/Resume.pdf', '_blank');
-        })
-        .finally(() => {
-          setTimeout(() => {
-            spinner.style.display = 'none';
-          }, 1500);
-        });
-    }
+  fetch('files/Resume.pdf')  // Removed the leading slash
+    .then(res => {
+      if (!res.ok) throw new Error("File not found");
+      return res.blob();
+    })
+    .then(blob => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Darius_Cumpio_Resume.pdf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    })
+    .catch(() => {
+      window.open('files/Resume.pdf', '_blank');  // Also removed the leading slash here
+    })
+    .finally(() => {
+      setTimeout(() => {
+        spinner.style.display = 'none';
+      }, 1500);
+    });
+}
   </script>
 
 
