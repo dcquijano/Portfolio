@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darius Cumpio - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-code"></i> Darius Cumpio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 >Hi, I'm Darius Cumpio</h1>
+                    <p class="lead text-white">Full-Stack Web & Software Developer passionate about creating innovative solutions</p>
+                    <a href="#about" class="btn btn-primary btn-lg">
+                        <i class="fas fa-arrow-down me-2"></i>Learn More
+                    </a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <i class="fas fa-laptop-code" style="font-size: 15rem; opacity: 0.3;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center animate-on-scroll">
+                    <div class="profile-image-container">
+                        <img src="Image/CUMPIO, DARIUS BSIT- F.jpg"Darius Cumpio" class="profile-image">
+                        <div class="profile-decoration">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 animate-on-scroll">
+                    <div class="about-text">
+
+                <p> Energetic aand dedicated aspiring developer with practical experience from freelance assignments, internships, and academic projects. </p>
+                <p> Adept at translating technical concepts into effective solutions and enthusiastic about collaborating with dynamic teams. </p>
+                <p> Strong communicator with excellent organizational and problem-solving abilities. Fast learner with a proactive mindset, meticulous attention to detail, and a passion for continuous improvement and excellence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 animate-on-scroll">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <h5>ASP.NET Core</h5>
+                            <p>MVC, Web API, Entity Framework</p>
+                        </div>
+                       <!--
+                         <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <h5>MEAN Stack</h5>
+                            <p>MongoDB, Express, Angular, Node.js</p>
+                        </div>-->
+
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <h5>Databases</h5>
+                            <p>SQL Server, MongoDB</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <h5>Frontend</h5>
+                            <p>Bootstrap, <!--Tailwind CSS--> JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <p>Some of my recent work</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image" data-bs-toggle="modal" data-bs-target="#imageModal" data-project="ojt">
+                            <img src="/image/monitoringsystem.png" alt="OJT Monitoring System" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5>OJT Monitoring System</h5>
+                            <p>The OJT Monitoring System is a web-based application developed to efficiently track and manage the progress of on-the-job training students. It features real-time attendance logging, daily time tracking, automated report generation, and project/task monitoring. Built using ASP.NET MVC and integrated with SQL Server, the system provides a streamlined and user-friendly interface for both administrators and trainees.</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-1">ASP.NET MVC</span>
+                                <span class="badge bg-secondary me-1">SQL Server</span>
+                                <span class="badge bg-success me-1">Bootstrap</span>
+                                <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                                <span class="badge bg-info text-dark me-1">CSS</span>
+                                <span class="badge bg-light text-dark">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image" data-bs-toggle="modal" data-bs-target="#imageModal" data-project="inventory">
+                            <img src="/image/inventorysystem.png" alt="Inventory System" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5>Inventory System</h5>
+                            <p>A comprehensive ASP.NET MVC-based system designed to efficiently manage products, track stock levels, and handle transactions with real-time updates and reporting features.</p>
+                            <div class="project-tags">
+                                <span class="badge bg-primary me-1">ASP.NET MVC</span>
+                                <span class="badge bg-secondary me-1">SQL Server</span>
+                                <span class="badge bg-success me-1">Bootstrap</span>
+                                <span class="badge bg-warning text-dark me-1">JavaScript</span>
+                                <span class="badge bg-info text-dark me-1">CSS</span>
+                                <span class="badge bg-light text-dark">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal with Carousel -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Project Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/800x500/6c5ce7/white?text=OJT+System+Dashboard" class="d-block w-100" alt="OJT System Dashboard">
+                                <div class="image-caption">
+                                    <h6>OJT System Dashboard</h6>
+                                    <p>Main dashboard showing real-time attendance and progress tracking</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x500/a29bfe/white?text=OJT+Reports+Module" class="d-block w-100" alt="OJT Reports Module">
+                                <div class="image-caption">
+                                    <h6>Reports Module</h6>
+                                    <p>Automated report generation with detailed analytics</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/800x500/fd79a8/white?text=OJT+Task+Management" class="d-block w-100" alt="OJT Task Management">
+                                <div class="image-caption">
+                                    <h6>Task Management</h6>
+                                    <p>Project and task monitoring interface for trainees</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- Resume Section -->
+<section id="resume" class="section resume">
+    <div class="container">
+        <div class="section-title animate-on-scroll">
+            <h2>Resume</h2>
+            <p>My professional journey</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!-- Personal Information -->
+                <div class="resume-item animate-on-scroll">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <span><strong>Name:</strong> Darius Q. Cumpio</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span><strong>Email:</strong> dariuscumpio@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Location:</strong> Cebu City</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span><strong>Phone:</strong> +63 955 621 5414</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <!-- Profile -->
+                <div class="resume-item animate-on-scroll">
+                    <h4><i class="fas fa-user-circle me-2"></i>Profile</h4>
+                    <p>
+                        Energetic and dedicated aspiring developer with practical experience from freelance assignments, internships, and academic projects. Adept at translating technical concepts into effective solutions and enthusiastic about collaborating with dynamic teams. Strong communicator with excellent organizational and problem-solving abilities. Fast learner with a proactive mindset, meticulous attention to detail, and a passion for continuous improvement and excellence.
+                    </p>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-item animate-on-scroll">
+                    <h4><i class="fas fa-graduation-cap me-2"></i>Education</h4>
+                    <p><strong>Bachelor of Science in Information Technology</strong><br>
+                    Asian College of Technology<br>
+                    <em>2024–2025</em></p>
+                </div>
+
+                <!-- Skills -->
+                <div class="resume-item animate-on-scroll">
+                    <h4><i class="fas fa-cogs me-2"></i>Technical Skills</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>C#</li>
+                                <li><i class="fas fa-check text-success me-2"></i>.NET / ASP.NET MVC</li>
+                                <li><i class="fas fa-check text-success me-2"></i>JavaScript</li>
+                                <li><i class="fas fa-check text-success me-2"></i>SQL / Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Git</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Visual Studio</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Windows Form</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Teamwork, Time Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="resume-item animate-on-scroll">
+                    <h4><i class="fas fa-briefcase me-2"></i>Experience</h4>
+                    <p><strong>Freelance Developer</strong><br>
+                    Cebu Based | Jan 2024 – May 2025<br>
+                    <em>Developed flood monitoring systems with alert notifications, dashboards, and historical data tracking.</em></p>
+
+                   <p><strong>OJT Programmer</strong><br>
+                    Asian College of Technology | Jan 2024 – Apr 2025<br>
+                    <em>
+                    Collaborated with team members to understand system specifications and technical documentation.<br>
+                    Participated in code reviews and problem-solving sessions to improve software quality.<br>
+                    Documented development processes, issues, and solutions for knowledge sharing.
+                    </em></p>
+
+                    <p><strong>Office Assistant</strong><br>
+                    MLhuillier | Jan 2023 – May 2024<br>
+                    <em>Handled file organization, documentation, and supported team administrative tasks.</em></p>
+                </div>
+
+                <!-- Project -->
+                <div class="resume-item animate-on-scroll">
+                    <h4><i class="fas fa-project-diagram me-2"></i>Project</h4>
+                    <p><strong>Empowering Growth by Enhancing the OJT for Workplace Success in KMCCTV</strong><br>
+                    <em>Role: Database Manager & Programmer | Tech: .NET, SQL</em><br>
+                    Developed core features and backend database for capstone project in KMCCTV (2024)</p>
+                </div>
+
+                <!-- Languages -->
+                <div class="resume-item animate-on-scroll">
+                    <h4><i class="fas fa-language me-2"></i>Languages</h4>
+                    <p>English, Bisaya, Tagalog</p>
+                </div>
+
+                <!-- References -->
+                <div class="resume-item animate-on-scroll">
+                    <h4><i class="fas fa-address-book me-2"></i>References</h4>
+                    <p><strong>Joshua A. Cho</strong><br>
+                    College Teacher<br>
+                    0999-669-8059</p>
+                    <p><strong>Anthony Belarmino</strong><br>
+                    Junior Software Developer<br>
+                    0910-975-0806</p>
+                </div>
+
+                <!-- Download Resume -->
+                <div class="download-section animate-on-scroll">
+                    <h4><i class="fas fa-download me-2"></i>Download My Resume</h4>
+                    <p>Get a copy of my resume in PDF format</p>
+                    <a href="/Files/RESUME.pdf" download="Darius_Cumpio_Resume.pdf" class="download-btn">
+                        <i class="fas fa-file-pdf"></i> Download PDF Resume
+                    </a>
+                    <div class="loading" id="loadingSpinner">
+                        <div class="spinner"></div>
+                        <p>Generating your resume...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/dcquijano"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dariuscumpio/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/ikyojin"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="text-center">
+                <p>&copy; 2025 Darius Cumpio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95))';
+            } else {
+                navbar.style.background = 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))';
+            }
+        });
+    </script>
+  <script>
+        // Optional: Add click handler for loading state
+        document.querySelector('.download-btn').addEventListener('click', function(e) {
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            
+            // Show loading spinner
+            loadingSpinner.style.display = 'block';
+            
+            // Hide loading spinner after 2 seconds (adjust as needed)
+            setTimeout(() => {
+                loadingSpinner.style.display = 'none';
+            }, 2000);
+        });
+
+        // Trigger animation on page load
+        window.addEventListener('load', function() {
+            const section = document.querySelector('.animate-on-scroll');
+            section.style.animationDelay = '0.3s';
+        });
+    </script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Dynamic carousel content based on clicked project
+        const projectData = {
+            ojt: {
+                title: "OJT Monitoring System",
+                slides: [
+                    {
+                        src: "https://via.placeholder.com/800x500/6c5ce7/white?text=OJT+System+Dashboard",
+                        alt: "OJT System Dashboard",
+                        title: "System Dashboard",
+                        description: "Main dashboard showing real-time attendance and progress tracking"
+                    },
+                    {
+                        src: "https://via.placeholder.com/800x500/a29bfe/white?text=OJT+Reports+Module",
+                        alt: "OJT Reports Module", 
+                        title: "Reports Module",
+                        description: "Automated report generation with detailed analytics"
+                    },
+                    {
+                        src: "https://via.placeholder.com/800x500/fd79a8/white?text=OJT+Task+Management",
+                        alt: "OJT Task Management",
+                        title: "Task Management", 
+                        description: "Project and task monitoring interface for trainees"
+                    }
+                ]
+            },
+            inventory: {
+                title: "Inventory Management System",
+                slides: [
+                    {
+                        src: "https://via.placeholder.com/800x500/74b9ff/white?text=Inventory+Dashboard",
+                        alt: "Inventory Dashboard",
+                        title: "Inventory Dashboard",
+                        description: "Real-time stock tracking and management overview"
+                    },
+                    {
+                        src: "https://via.placeholder.com/800x500/00b894/white?text=Product+Management",
+                        alt: "Product Management",
+                        title: "Product Management",
+                        description: "Add, edit, and manage product information"
+                    },
+                    {
+                        src: "https://via.placeholder.com/800x500/e17055/white?text=Transaction+History",
+                        alt: "Transaction History",
+                        title: "Transaction History",
+                        description: "Complete transaction logs and reporting"
+                    }
+                ]
+            }
+        };
+
+        // Update carousel content when modal opens
+        document.getElementById('imageModal').addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            const projectType = button.getAttribute('data-project');
+            const project = projectData[projectType];
+            
+            if (project) {
+                // Update modal title
+                document.getElementById('imageModalLabel').textContent = project.title;
+                
+                // Update carousel slides
+                const carouselInner = document.querySelector('#projectCarousel .carousel-inner');
+                const indicators = document.querySelector('#projectCarousel .carousel-indicators');
+                
+                // Clear existing content
+                carouselInner.innerHTML = '';
+                indicators.innerHTML = '';
+                
+                // Add new slides
+                project.slides.forEach((slide, index) => {
+                    // Create slide
+                    const slideDiv = document.createElement('div');
+                    slideDiv.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                    slideDiv.innerHTML = `
+                        <img src="${slide.src}" class="d-block w-100" alt="${slide.alt}">
+                        <div class="image-caption">
+                            <h6>${slide.title}</h6>
+                            <p>${slide.description}</p>
+                        </div>
+                    `;
+                    carouselInner.appendChild(slideDiv);
+                    
+                    // Create indicator
+                    const indicator = document.createElement('button');
+                    indicator.type = 'button';
+                    indicator.setAttribute('data-bs-target', '#projectCarousel');
+                    indicator.setAttribute('data-bs-slide-to', index);
+                    if (index === 0) {
+                        indicator.className = 'active';
+                        indicator.setAttribute('aria-current', 'true');
+                    }
+                    indicators.appendChild(indicator);
+                });
+            }
+        });
+
+        // Reset carousel to first slide when modal closes
+        document.getElementById('imageModal').addEventListener('hidden.bs.modal', function () {
+            const carousel = bootstrap.Carousel.getInstance(document.getElementById('projectCarousel'));
+            if (carousel) {
+                carousel.to(0);
+            }
+        });
+    </script>
+
+</body>
+</html>
