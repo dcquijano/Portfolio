@@ -420,7 +420,7 @@
       const spinner = document.getElementById('loadingSpinner');
       spinner.style.display = 'block';
 
-      fetch('./files/Resume.pdf')
+      fetch('/files/Resume.pdf')
         .then(res => {
           if (!res.ok) throw new Error("File not found");
           return res.blob();
@@ -436,7 +436,7 @@
           URL.revokeObjectURL(url);
         })
         .catch(() => {
-          window.open('./files/Resume.pdf', '_blank');
+          window.open('/files/Resume.pdf', '_blank');
         })
         .finally(() => {
           setTimeout(() => {
