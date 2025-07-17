@@ -425,7 +425,7 @@ function downloadResume() {
     loadingSpinner.style.display = 'block';
     
     // Method 1: Direct download
-    fetch('./files/Resume.pdf')
+    fetch('files/Resume.pdf')
         .then(response => response.blob())
         .then(blob => {
             const url = window.URL.createObjectURL(blob);
@@ -440,7 +440,7 @@ function downloadResume() {
         .catch(error => {
             // Method 2: Fallback
             const link = document.createElement('a');
-            link.href = '/files/Resume.pdf';
+            link.href = 'files/Resume.pdf';
             link.download = 'Darius_Cumpio_Resume.pdf';
             link.target = '_blank';
             document.body.appendChild(link);
