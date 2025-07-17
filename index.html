@@ -340,16 +340,16 @@
                     0910-975-0806</p>
                 </div>
 
-                <!-- Download Resume -->
+                <!-- Download Resume Section -->
                 <div class="download-section animate-on-scroll">
                     <h4><i class="fas fa-download me-2"></i>Download My Resume</h4>
                     <p>Get a copy of my resume in PDF format</p>
-                    <a href="./files/Resume.pdf" download="Darius_Cumpio_Resume.pdf" class="download-btn">
+                    <button onclick="downloadResume()" class="download-btn">
                         <i class="fas fa-file-pdf"></i> Download PDF Resume
-                    </a>
-                    <div class="loading" id="loadingSpinner">
+                    </button>
+                    <div class="loading" id="loadingSpinner" style="display: none;">
                         <div class="spinner"></div>
-                        <p>Generating your resume...</p>
+                        <p>Preparing your resume...</p>
                     </div>
                 </div>
 
@@ -417,26 +417,43 @@
             }
         });
     </script>
+
+   <!--For Resume Download -->
   <script>
-        // Optional: Add click handler for loading state
-        document.querySelector('.download-btn').addEventListener('click', function(e) {
-            const loadingSpinner = document.getElementById('loadingSpinner');
-            
-            // Show loading spinner
-            loadingSpinner.style.display = 'block';
-            
-            // Hide loading spinner after 2 seconds (adjust as needed)
+function downloadResume() {
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    loadingSpinner.style.display = 'block';
+    
+    // Method 1: Direct download
+    fetch('./files/Resume.pdf')
+        .then(response => response.blob())
+        .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Darius_Cumpio_Resume.pdf';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        })
+        .catch(error => {
+            // Method 2: Fallback
+            const link = document.createElement('a');
+            link.href = './files/Resume.pdf';
+            link.download = 'Darius_Cumpio_Resume.pdf';
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        })
+        .finally(() => {
             setTimeout(() => {
                 loadingSpinner.style.display = 'none';
             }, 2000);
         });
-
-        // Trigger animation on page load
-        window.addEventListener('load', function() {
-            const section = document.querySelector('.animate-on-scroll');
-            section.style.animationDelay = '0.3s';
-        });
-    </script>
+}
+</script>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
