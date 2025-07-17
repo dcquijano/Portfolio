@@ -440,7 +440,7 @@ function downloadResume() {
             window.URL.revokeObjectURL(url);
         })
         .catch(() => {
-            window.open('./files/Resume.pdf', '_blank');
+            window.open('files/Resume.pdf', '_blank');
         })
         .finally(() => {
             setTimeout(() => {
