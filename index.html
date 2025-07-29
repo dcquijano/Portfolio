@@ -261,21 +261,26 @@
     <div class="container">
 
 
-   <!-- ✅ Download Resume added here -->
+        <!-- Download Resume Section -->
         <div class="download-section animate-on-scroll text-center mb-4">
             <h4><i class="fas fa-download me-2"></i>Download My Resume</h4>
             <p>Get a copy of my resume in PDF format</p>
-            <a href="/files/RESUME.pdf" download="Darius_Cumpio_Resume.pdf" class="btn btn-primary">
+
+            <!-- Added download-btn class -->
+            <a href="/files/RESUME.pdf" 
+            download="Darius_Cumpio_Resume.pdf" 
+            class="btn btn-primary download-btn">
                 <i class="fas fa-file-pdf me-1"></i> Download PDF Resume
             </a>
-            <div class="loading d-none" id="loadingSpinner">
+
+            <!-- Loading Spinner -->
+            <div class="loading d-none mt-3" id="loadingSpinner">
                 <div class="spinner-border text-primary" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
                 <p class="mt-2">Generating your resume...</p>
             </div>
         </div>
-
 
 
         <div class="section-title animate-on-scroll">
@@ -481,23 +486,29 @@
 
   <script>
         // Optional: Add click handler for loading state
-        document.querySelector('.download-btn').addEventListener('click', function(e) {
-            const loadingSpinner = document.getElementById('loadingSpinner');
-            
-            // Show loading spinner
-            loadingSpinner.style.display = 'block';
-            
-            // Hide loading spinner after 2 seconds (adjust as needed)
-            setTimeout(() => {
-                loadingSpinner.style.display = 'none';
-            }, 2000);
-        });
+    document.addEventListener('DOMContentLoaded', function () {
+        const downloadBtn = document.querySelector('.download-btn');
+        const loadingSpinner = document.getElementById('loadingSpinner');
 
-        // Trigger animation on page load
-        window.addEventListener('load', function() {
-            const section = document.querySelector('.animate-on-scroll');
+        // ✅ Check if button exists before attaching event
+        if (downloadBtn && loadingSpinner) {
+            downloadBtn.addEventListener('click', function () {
+                // Show loading spinner
+                loadingSpinner.classList.remove('d-none');
+
+                // Hide loading spinner after 2 seconds
+                setTimeout(() => {
+                    loadingSpinner.classList.add('d-none');
+                }, 2000);
+            });
+        }
+
+        // ✅ Trigger animation on page load
+        const section = document.querySelector('.animate-on-scroll');
+        if (section) {
             section.style.animationDelay = '0.3s';
-        });
+        }
+    });
     </script>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
